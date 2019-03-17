@@ -1,0 +1,54 @@
+.series-row-menu-handle {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: none;
+    cursor: pointer;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.series-row-menu-handle:after {
+    content: '\2807';
+    font-size: 20px;
+}
+
+.series-row-menu {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    z-index:30000;
+}
+
+.series-row-menu > div {
+    color:white;
+    padding:20px;
+}
+
+.value-row {
+    height:30px;
+}
+
+.value-row-menu-handle {
+    display:none;
+}
+
+.value-row-menu-handle:after {
+    content: '\2807';
+    font-size: 10px;
+    padding:0px;
+}
+
+.value-row-menu {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    z-index:30000;
+}
+
+.value-row-menu > div {
+    color:white;
+    padding:20px;
+}

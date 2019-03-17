@@ -1,0 +1,36 @@
+
+{% load static compress %}
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="{% static 'bootstrap/dist/css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'global.css' %}" rel="stylesheet">
+    <link href="{% static 'core/cover.css' %}" rel="stylesheet">
+
+    <title>{{cookiecutter.project_name}}</title>
+
+    {% block extra_css %}{% endblock %}
+</head>
+<body class="text-center">
+{% block content %}{% endblock %}
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+{% compress js %}
+    <script src="{% static 'jquery/dist/jquery.js' %}"></script>
+    <script src="{% static 'popper.js/dist/umd/popper.js' %}"></script>
+    <script src="{% static 'bootstrap/dist/js/bootstrap.js' %}"></script>
+{% endcompress %}
+
+<script src="{% static 'feather-icons/dist/feather.min.js' %}"></script>
+<script>
+    feather.replace()
+</script>
+
+</body>
+</html>
