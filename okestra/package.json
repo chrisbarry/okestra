@@ -2,7 +2,7 @@
   "dependencies": {
     "bootstrap": "4.1.0",
     "feather-icons": "^4.7.0",
-    "handlebars": "^4.0.11",
+    "handlebars": "^4.1.2",
     "jquery": "^3.3.1",
     "moment": "^2.22.1",
     "pepjs": "^0.4.3",
